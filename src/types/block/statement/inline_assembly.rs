@@ -7,7 +7,7 @@ pub use external_references_item::*;
 mod flags_item;
 pub use flags_item::*;
 
-use crate::{SourceLocation, YulBlock};
+use crate::types::{SourceLocation, YulBlock};
 
 
 #[doc = "InlineAssembly"]

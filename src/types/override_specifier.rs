@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{IdentifierPath, SourceLocation, UserDefinedTypeName};
+use crate::types::{IdentifierPath, SourceLocation, UserDefinedTypeName};
 
 #[doc = "OverrideSpecifier"]
 #[doc = r""]

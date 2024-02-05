@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, StateMutability, TypeDescriptions};
+use crate::types::{SourceLocation, StateMutability, TypeDescriptions};
 
 #[doc = "ElementaryTypeName"]
 #[doc = r""]

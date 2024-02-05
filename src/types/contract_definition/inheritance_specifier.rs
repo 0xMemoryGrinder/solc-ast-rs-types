@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Expression, IdentifierPath, SourceLocation, UserDefinedTypeName};
+use crate::types::{Expression, IdentifierPath, SourceLocation, UserDefinedTypeName};
 
 #[doc = "InheritanceSpecifier"]
 #[doc = r""]

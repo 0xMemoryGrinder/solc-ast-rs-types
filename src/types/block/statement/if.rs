@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Block, Expression, SourceLocation, Statement};
+use crate::types::{Block, Expression, SourceLocation, Statement};
 
 #[doc = "IfStatement"]
 #[doc = r""]
@@ -106,16 +106,33 @@ impl From<&IfStatement> for IfStatement {
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-pub struct IfStatementTrueBody {
-    #[serde(flatten, default)]
-    pub subtype_0: Box<Option<Statement>>,
-    #[serde(flatten, default, skip_serializing_if = "Option::is_none")]
-    pub subtype_1: Option<Block>,
+#[serde(untagged)]
+pub enum IfStatementTrueBody {
+    Block(Block),
+    Statement(Box<Statement>),
 }
 
 impl From<&IfStatementTrueBody> for IfStatementTrueBody {
     fn from(value: &IfStatementTrueBody) -> Self {
         value.clone()
+    }
+}
+
+impl From<Block> for IfStatementTrueBody {
+    fn from(value: Block) -> Self {
+        IfStatementTrueBody::Block(value)
+    }
+}
+
+impl From<Statement> for IfStatementTrueBody {
+    fn from(value: Statement) -> Self {
+        IfStatementTrueBody::Statement(Box::new(value))
+    }
+}
+
+impl From<Box<Statement>> for IfStatementTrueBody {
+    fn from(value: Box<Statement>) -> Self {
+        IfStatementTrueBody::Statement(value)
     }
 }
 

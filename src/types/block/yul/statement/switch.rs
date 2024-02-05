@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 mod case;
 pub use case::*;
 
-use crate::{SourceLocation, YulExpression};
+use crate::types::{SourceLocation, YulExpression};
 
 
 #[doc = "YulSwitch"]

@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Block, Expression, ExpressionStatement, SourceLocation, VariableDeclarationStatement};
+use crate::types::{Block, Expression, ExpressionStatement, SourceLocation, VariableDeclarationStatement};
 
 
 #[doc = "ForStatement"]

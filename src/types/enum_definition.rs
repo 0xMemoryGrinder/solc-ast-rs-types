@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 mod enum_value;
 pub use enum_value::*;
 
-use crate::{SourceLocation, StructuredDocumentation};
+use crate::types::{SourceLocation, StructuredDocumentation};
 
 
 #[doc = "EnumDefinition"]

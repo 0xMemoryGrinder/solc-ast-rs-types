@@ -22,7 +22,7 @@ mod variable_declaration;
 pub use variable_declaration::*;
 
 
-use crate::YulBlock;
+use crate::types::YulBlock;
 
 
 #[doc = "YulStatement"]

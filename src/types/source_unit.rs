@@ -4,7 +4,7 @@ mod source_unit_node_type;
 pub use source_unit_node_type::*;
 mod source_unit_nodes_item;
 pub use source_unit_nodes_item::*;
-use crate::SourceLocation;
+use crate::types::SourceLocation;
 
 #[doc = "SourceUnit"]
 #[doc = r""]

@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, StructuredDocumentation, VariableDeclaration, Visibility};
+use crate::types::{SourceLocation, StructuredDocumentation, VariableDeclaration, Visibility};
 
 
 #[doc = "StructDefinition"]

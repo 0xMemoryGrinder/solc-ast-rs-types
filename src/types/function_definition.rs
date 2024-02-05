@@ -7,7 +7,7 @@ pub use modifier_invocation::*;
 mod state_mutability;
 pub use state_mutability::*;
 
-use crate::{Block, ParameterList, SourceLocation, StructuredDocumentation, Visibility, OverrideSpecifier};
+use crate::types::{Block, ParameterList, SourceLocation, StructuredDocumentation, Visibility, OverrideSpecifier};
 
 #[doc = "FunctionDefinition"]
 #[doc = r""]

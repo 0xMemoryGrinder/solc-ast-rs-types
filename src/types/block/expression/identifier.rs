@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, TypeDescriptions};
+use crate::types::{SourceLocation, TypeDescriptions};
 
 
 #[doc = "Identifier"]

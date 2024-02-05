@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Block, FunctionCall, ParameterList, SourceLocation};
+use crate::types::{Block, FunctionCall, ParameterList, SourceLocation};
 
 
 #[doc = "TryStatement"]

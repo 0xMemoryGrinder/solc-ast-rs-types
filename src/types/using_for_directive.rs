@@ -5,7 +5,7 @@ pub use function_list_item::*;
 mod library_name;
 pub use library_name::*;
 
-use crate::{SourceLocation, TypeName};
+use crate::types::{SourceLocation, TypeName};
 
 #[doc = "UsingForDirective"]
 #[doc = r""]

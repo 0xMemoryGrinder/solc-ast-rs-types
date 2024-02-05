@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::Identifier;
+use crate::types::Identifier;
 
 
 #[doc = "ImportDirectiveSymbolAliasesItem"]

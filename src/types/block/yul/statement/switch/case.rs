@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, YulBlock, YulLiteral};
+use crate::types::{SourceLocation, YulBlock, YulLiteral};
 
 
 #[doc = "YulCase"]

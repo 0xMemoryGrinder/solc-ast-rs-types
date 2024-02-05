@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, TypeDescriptions, TypeName};
+use crate::types::{SourceLocation, TypeDescriptions, TypeName};
 
 
 #[doc = "Mapping"]

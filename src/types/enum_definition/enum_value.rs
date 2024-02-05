@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::SourceLocation;
+use crate::types::SourceLocation;
 
 #[doc = "EnumValue"]
 #[doc = r""]

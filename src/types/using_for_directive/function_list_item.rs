@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::IdentifierPath;
+use crate::types::IdentifierPath;
 
 #[doc = "UsingForDirectiveFunctionListItem"]
 #[doc = r""]

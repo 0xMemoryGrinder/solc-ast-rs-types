@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Identifier, IdentifierPath};
+use crate::types::{Identifier, IdentifierPath};
 
 #[doc = "ModifierInvocationModifierName"]
 #[doc = r""]

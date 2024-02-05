@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, YulBlock, YulExpression};
+use crate::types::{SourceLocation, YulBlock, YulExpression};
 
 
 #[doc = "YulForLoop"]

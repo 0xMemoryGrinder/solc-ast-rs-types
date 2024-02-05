@@ -31,7 +31,7 @@ pub use variable_declaration::*;
 mod r#while;
 pub use r#while::*;
 
-use crate::Block;
+use crate::types::Block;
 
 
 #[doc = "Statement"]

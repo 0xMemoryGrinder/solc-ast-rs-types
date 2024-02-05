@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, TypeName};
+use crate::types::{SourceLocation, TypeName};
 
 #[doc = "UserDefinedValueTypeDefinition"]
 #[doc = r""]

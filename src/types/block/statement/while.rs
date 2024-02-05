@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Block, Expression, SourceLocation, Statement};
+use crate::types::{Block, Expression, SourceLocation, Statement};
 
 
 #[doc = "WhileStatement"]

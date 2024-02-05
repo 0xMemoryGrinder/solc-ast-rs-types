@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{ParameterList, SourceLocation, StateMutability, TypeDescriptions, Visibility};
+use crate::types::{ParameterList, SourceLocation, StateMutability, TypeDescriptions, Visibility};
 
 #[doc = "FunctionTypeName"]
 #[doc = r""]

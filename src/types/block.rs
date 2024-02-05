@@ -7,7 +7,7 @@ pub use expression::*;
 mod yul;
 pub use yul::*;
 
-use crate::SourceLocation;
+use crate::types::SourceLocation;
 
 
 #[doc = "Block"]

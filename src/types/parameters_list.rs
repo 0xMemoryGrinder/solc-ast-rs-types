@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, VariableDeclaration};
+use crate::types::{SourceLocation, VariableDeclaration};
 
 
 

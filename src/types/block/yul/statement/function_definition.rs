@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, YulBlock, YulTypedName};
+use crate::types::{SourceLocation, YulBlock, YulTypedName};
 
 
 #[doc = "YulFunctionDefinition"]

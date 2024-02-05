@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Expression, SourceLocation, TypeDescriptions, TypeName};
+use crate::types::{Expression, SourceLocation, TypeDescriptions, TypeName};
 
 
 #[doc = "ArrayTypeName"]

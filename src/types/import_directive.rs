@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 mod symbol_alias_item;
 pub use symbol_alias_item::*;
 
-use crate::SourceLocation;
+use crate::types::SourceLocation;
 
 #[doc = "ImportDirective"]
 #[doc = r""]

@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{FunctionCall, SourceLocation};
+use crate::types::{FunctionCall, SourceLocation};
 
 #[doc = "EmitStatement"]
 #[doc = r""]

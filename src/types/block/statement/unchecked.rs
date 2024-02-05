@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{SourceLocation, Statement};
+use crate::types::{SourceLocation, Statement};
 
 
 #[doc = "UncheckedBlock"]

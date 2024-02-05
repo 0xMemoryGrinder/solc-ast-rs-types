@@ -7,7 +7,7 @@ pub use storage_location::*;
 mod type_descriptions;
 pub use type_descriptions::*;
 
-use crate::{Expression, OverrideSpecifier, SourceLocation, StructuredDocumentation, TypeName, Visibility};
+use crate::types::{Expression, OverrideSpecifier, SourceLocation, StructuredDocumentation, TypeName, Visibility};
 
 #[doc = "VariableDeclaration"]
 #[doc = r""]

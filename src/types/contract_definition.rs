@@ -7,7 +7,7 @@ pub use contract_kind::*;
 mod nodes;
 pub use nodes::*;
 
-use crate::{SourceLocation, StructuredDocumentation};
+use crate::types::{SourceLocation, StructuredDocumentation};
 
 #[doc = "ContractDefinition"]
 #[doc = r""]

@@ -5,7 +5,7 @@ pub use modifier_invocation_kind::*;
 mod modifier_name;
 pub use modifier_name::*;
 
-use crate::{Expression, SourceLocation};
+use crate::types::{Expression, SourceLocation};
 
 #[doc = "ModifierInvocation"]
 #[doc = r""]

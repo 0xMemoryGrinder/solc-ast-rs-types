@@ -7,7 +7,7 @@ pub use hex_value::*;
 mod subdenomination;
 pub use subdenomination::*;
 
-use crate::{SourceLocation, TypeDescriptions};
+use crate::types::{SourceLocation, TypeDescriptions};
 
 
 #[doc = "Literal"]

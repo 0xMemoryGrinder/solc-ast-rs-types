@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Block, OverrideSpecifier, ParameterList, SourceLocation, StructuredDocumentation, Visibility};
+use crate::types::{Block, OverrideSpecifier, ParameterList, SourceLocation, StructuredDocumentation, Visibility};
 
 
 #[doc = "ModifierDefinition"]

@@ -7,7 +7,7 @@ pub use expression::*;
 mod typed_name;
 pub use typed_name::*;
 
-use crate::SourceLocation;
+use crate::types::SourceLocation;
 
 
 #[doc = "YulBlock"]

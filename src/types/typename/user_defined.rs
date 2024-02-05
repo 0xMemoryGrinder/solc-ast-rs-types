@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{IdentifierPath, SourceLocation, TypeDescriptions};
+use crate::types::{IdentifierPath, SourceLocation, TypeDescriptions};
 
 
 #[doc = "UserDefinedTypeName"]

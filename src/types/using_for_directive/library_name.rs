@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{IdentifierPath, UserDefinedTypeName};
+use crate::types::{IdentifierPath, UserDefinedTypeName};
 
 #[doc = "UsingForDirectiveLibraryName"]
 #[doc = r""]

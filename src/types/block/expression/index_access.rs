@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Expression, SourceLocation, TypeDescriptions};
+use crate::types::{Expression, SourceLocation, TypeDescriptions};
 
 
 #[doc = "IndexAccess"]

@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{ElementaryTypeName, SourceLocation, TypeDescriptions};
+use crate::types::{ElementaryTypeName, SourceLocation, TypeDescriptions};
 
 
 #[doc = "ElementaryTypeNameExpression"]

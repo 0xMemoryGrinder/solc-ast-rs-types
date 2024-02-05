@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{ContractDefinition, EnumDefinition, ErrorDefinition, FunctionDefinition, ImportDirective, PragmaDirective, StructDefinition, UserDefinedValueTypeDefinition, UsingForDirective, VariableDeclaration};
+use crate::types::{ContractDefinition, EnumDefinition, ErrorDefinition, FunctionDefinition, ImportDirective, PragmaDirective, StructDefinition, UserDefinedValueTypeDefinition, UsingForDirective, VariableDeclaration};
 
 #[doc = "SourceUnitNodesItem"]
 #[doc = r""]

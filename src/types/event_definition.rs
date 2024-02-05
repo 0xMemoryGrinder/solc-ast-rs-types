@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{ParameterList, SourceLocation, StructuredDocumentation};
+use crate::types::{ParameterList, SourceLocation, StructuredDocumentation};
 
 
 #[doc = "EventDefinition"]

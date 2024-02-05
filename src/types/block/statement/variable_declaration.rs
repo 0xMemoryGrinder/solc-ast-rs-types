@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{Expression, SourceLocation, VariableDeclaration};
+use crate::types::{Expression, SourceLocation, VariableDeclaration};
 
 
 #[doc = "VariableDeclarationStatement"]

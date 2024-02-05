@@ -1,5 +1,9 @@
 [package]
 name = "solc-ast-rs-types"
+description = "Rust types for the Solidity AST from the solc compiler"
+license = "GPL-3.0"
+documentation = "https://docs.rs/solc-ast-rs-types"
+repository = "https://github.com/0xMemoryGrinder/solc-ast-rs-types"
 version = "0.1.0"
 edition = "2021"
 

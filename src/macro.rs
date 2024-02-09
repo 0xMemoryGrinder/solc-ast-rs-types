@@ -38,8 +38,23 @@ macro_rules! make_visitor {
                     if let Some(doc) = & $($mut)? contract.documentation {
                         v.visit_structured_documentation(doc);
                     }
+                    for base in & $($mut)? contract.base_contracts {
+                        v.visit_inheritance_specifier(base);
+                    }
                     for node in & $($mut)? contract.nodes {
                         v.visit_contract_definition_node_item(node);
+                    }
+                }
+
+                fn visit_inheritance_specifier(&mut v, specifier: &'ast $($mut)? InheritanceSpecifier) {
+                    if let Some(args) = & $($mut)? specifier.arguments {
+                        for arg in args {
+                            v.visit_expression(arg);
+                        }
+                    }
+                    match & $($mut)? specifier.base_name {
+                        InheritanceSpecifierBaseName::UserDefinedTypeName(udt) => v.visit_user_defined_type_name(udt),
+                        InheritanceSpecifierBaseName::IdentifierPath(path) => v.visit_identifier_path(path),
                     }
                 }
 
@@ -87,6 +102,9 @@ macro_rules! make_visitor {
                 fn visit_function_definition(&mut v, function: &'ast $($mut)? FunctionDefinition) {
                     if let Some(doc) = & $($mut)? function.documentation {
                         v.visit_structured_documentation(doc);
+                    }
+                    for modifier in & $($mut)? function.modifiers {
+                        v.visit_modifier_invocation(modifier);
                     }
                     v.visit_parameter_list(& $($mut)? function.parameters);
                     v.visit_parameter_list(& $($mut)? function.return_parameters);
@@ -189,6 +207,18 @@ macro_rules! make_visitor {
                 fn visit_parameter_list(&mut v, params: &'ast $($mut)? ParameterList) {
                     for param in & $($mut)? params.parameters {
                         v.visit_variable_declaration(param);
+                    }
+                }
+
+                fn visit_modifier_invocation(&mut v, modifier: &'ast $($mut)? ModifierInvocation) {
+                    if let Some(args) = & $($mut)? modifier.arguments {
+                        for arg in args {
+                            v.visit_expression(arg);
+                        }
+                    }
+                    match & $($mut)? modifier.modifier_name {
+                        ModifierInvocationModifierName::Identifier(ident) => v.visit_identifier(ident),
+                        ModifierInvocationModifierName::IdentifierPath(path) => v.visit_identifier_path(path),
                     }
                 }
                 

@@ -7,9 +7,6 @@
 
 #![allow(unused_variables)]
 
-#[macro_use]
-mod r#macro;
-
 use crate::types::*;
 
 make_visitor! {

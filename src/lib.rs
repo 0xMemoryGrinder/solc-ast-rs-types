@@ -8,4 +8,11 @@ pub mod error;
 
 pub mod types;
 
+#[macro_use]
+mod r#macro;
+
+#[cfg(feature = "visit")]
 pub mod visit;
+
+/*#[cfg(feature = "visit-mut")]
+pub mod visit_mut;*/

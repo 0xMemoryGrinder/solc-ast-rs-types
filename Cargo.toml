@@ -10,9 +10,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
-default = ["visit", "visit-mut"]
+default = ["visit"]
 visit = []
-visit-mut = []
+# visit-mut = []
 
 [dependencies]
 regress = "0.8.0"

@@ -112,8 +112,8 @@ pub struct SourceUnit {
         skip_serializing_if = "Option::is_none"
     )]
     pub experimental_solidity: Option<bool>,
-    #[serde(rename = "exportedSymbols")]
-    pub exported_symbols: std::collections::HashMap<String, Vec<i64>>,
+    #[serde(rename = "exportedSymbols", skip_serializing_if = "Option::is_none")]
+    pub exported_symbols: Option<std::collections::HashMap<String, Vec<i64>>>,
     pub id: i64,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub license: Option<String>,

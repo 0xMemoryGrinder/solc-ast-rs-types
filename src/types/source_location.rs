@@ -1,3 +1,5 @@
+use std::u32;
+
 use serde::Serialize;
 
 #[doc = "SourceLocation"]
@@ -13,12 +15,51 @@ use serde::Serialize;
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Eq, Hash, Ord, PartialEq, PartialOrd, Serialize)]
 pub struct SourceLocation(String);
+
+impl SourceLocation {
+    pub fn as_str(&self) -> &str {
+        &self.0
+    }
+
+    pub fn line(&self) -> Option<u32> {
+        let mut parts = self.0.split(':');
+        parts.next()?.parse::<u32>().ok()
+    }
+
+    pub fn column(&self) -> Option<u32> {
+        let mut parts = self.0.split(':');
+        parts.next()?;
+        parts.next()?.parse::<u32>().ok()
+    }
+
+    pub fn length(&self) -> Option<u32> {
+        let mut parts = self.0.split(':');
+        parts.next()?;
+        parts.next()?;
+        parts.next()?.parse::<u32>().ok()
+    }
+
+    pub fn is_in_range(&self, line: u32, column: u32) -> bool {
+        let self_line = self.line();
+        let self_column = self.column();
+
+        if self_line.is_none() || self_column.is_none() || self_line.unwrap() != line || self_column.unwrap() > column || self_column.unwrap() + self.length().unwrap() < column {
+            return false;
+        }
+
+        true
+    }
+}
+
+
 impl std::ops::Deref for SourceLocation {
     type Target = String;
     fn deref(&self) -> &String {
         &self.0
     }
 }
+
+
 impl From<SourceLocation> for String {
     fn from(value: SourceLocation) -> Self {
         value.0

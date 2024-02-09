@@ -21,33 +21,23 @@ impl SourceLocation {
         &self.0
     }
 
-    pub fn line(&self) -> Option<u32> {
+    pub fn start(&self) -> Option<u32> {
         let mut parts = self.0.split(':');
         parts.next()?.parse::<u32>().ok()
     }
 
-    pub fn column(&self) -> Option<u32> {
+    pub fn end(&self) -> Option<u32> {
         let mut parts = self.0.split(':');
         parts.next()?;
         parts.next()?.parse::<u32>().ok()
     }
 
-    pub fn length(&self) -> Option<u32> {
-        let mut parts = self.0.split(':');
-        parts.next()?;
-        parts.next()?;
-        parts.next()?.parse::<u32>().ok()
-    }
+    pub fn is_in_range(&self, index: u32) -> bool {
+        let start = self.start();
+        let end = self.end();
 
-    pub fn is_in_range(&self, line: u32, column: u32) -> bool {
-        let self_line = self.line();
-        let self_column = self.column();
-
-        if self_line.is_none() || self_column.is_none() || self_line.unwrap() != line || self_column.unwrap() > column || self_column.unwrap() + self.length().unwrap() < column {
-            return false;
-        }
-
-        true
+        start.is_some() && end.is_some() &&
+            index >= start.unwrap() && index <= end.unwrap()
     }
 }
 

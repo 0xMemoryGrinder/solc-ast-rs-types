@@ -174,8 +174,14 @@ macro_rules! make_visitor {
 
 
                 // Import directives
-                fn visit_import_directive(&mut _v, _import: &'ast $($mut)? ImportDirective) {
-                    // nothing to do
+                fn visit_import_directive(&mut v, import: &'ast $($mut)? ImportDirective) {
+                    for alias in & $($mut)? import.symbol_aliases {
+                        v.visit_import_directive_symbol_aliases_item(alias);
+                    }
+                }
+
+                fn visit_import_directive_symbol_aliases_item(&mut v, alias: &'ast $($mut)? ImportDirectiveSymbolAliasesItem) {
+                    v.visit_identifier(& $($mut)? alias.foreign);
                 }
 
                 // Pragma directives

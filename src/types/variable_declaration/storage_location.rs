@@ -1,6 +1,5 @@
 use serde::{Deserialize, Serialize};
 
-
 #[doc = "StorageLocation"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

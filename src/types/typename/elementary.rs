@@ -66,8 +66,6 @@ impl From<&ElementaryTypeName> for ElementaryTypeName {
     }
 }
 
-
-
 // Node type
 #[doc = "ElementaryTypeNameNodeType"]
 #[doc = r""]

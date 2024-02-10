@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{SourceLocation, TypeDescriptions, TypeName};
 
-
 #[doc = "Mapping"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -92,7 +91,6 @@ impl From<&Mapping> for Mapping {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "MappingNodeType"]

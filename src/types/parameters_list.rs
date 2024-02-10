@@ -2,8 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{SourceLocation, VariableDeclaration};
 
-
-
 #[doc = "ParameterList"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -55,7 +53,6 @@ impl From<&ParameterList> for ParameterList {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "ParameterListNodeType"]

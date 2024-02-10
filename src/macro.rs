@@ -8,7 +8,7 @@ macro_rules! make_visitor {
             @impl
             $(#[$attr])*
             pub trait $trait_name<'ast> {
-                
+
                 fn visit_source_unit(&mut v, source_unit: &'ast $($mut)? SourceUnit) {
                     for node in & $($mut)? source_unit.nodes {
                         v.visit_source_unit_nodes_item(node);
@@ -227,7 +227,7 @@ macro_rules! make_visitor {
                         ModifierInvocationModifierName::IdentifierPath(path) => v.visit_identifier_path(path),
                     }
                 }
-                
+
 
                 fn visit_type_descriptions(&mut _v, _type_descriptions: &'ast $($mut)? TypeDescriptions) {
                     // nothing to do
@@ -276,10 +276,10 @@ macro_rules! make_visitor {
                 fn visit_identifier_path(&mut _v, _path: &'ast $($mut)? IdentifierPath) {
                     // nothing to do
                 }
-                
-                
-                
-                
+
+
+
+
 
 
 
@@ -560,7 +560,7 @@ macro_rules! make_visitor {
 
 
 
-                
+
                 // Expressions
 
                 fn visit_expression(&mut v, expr: &'ast $($mut)? Expression) {
@@ -742,23 +742,23 @@ macro_rules! make_visitor {
                     v.visit_expression(& $($mut)? unary.sub_expression);
                     v.visit_type_descriptions(& $($mut)? unary.type_descriptions);
                 }
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }
         }
     };

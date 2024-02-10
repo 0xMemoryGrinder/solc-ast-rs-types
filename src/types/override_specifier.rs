@@ -64,7 +64,6 @@ impl From<&OverrideSpecifier> for OverrideSpecifier {
     }
 }
 
-
 #[doc = "OverrideSpecifierOverrides"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -111,7 +110,6 @@ impl From<Vec<IdentifierPath>> for OverrideSpecifierOverrides {
         Self::IdentifierPaths(value)
     }
 }
-
 
 // Node type
 #[doc = "OverrideSpecifierNodeType"]

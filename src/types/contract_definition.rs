@@ -206,7 +206,6 @@ impl From<&ContractDefinition> for ContractDefinition {
     }
 }
 
-
 // Node Type
 #[doc = "ContractDefinitionNodeType"]
 #[doc = r""]

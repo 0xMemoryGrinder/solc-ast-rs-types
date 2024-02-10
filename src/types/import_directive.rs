@@ -117,8 +117,6 @@ impl From<&ImportDirective> for ImportDirective {
     }
 }
 
-
-
 // Node type
 #[doc = "ImportDirectiveNodeType"]
 #[doc = r""]

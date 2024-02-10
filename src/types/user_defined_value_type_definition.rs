@@ -75,7 +75,6 @@ impl From<&UserDefinedValueTypeDefinition> for UserDefinedValueTypeDefinition {
     }
 }
 
-
 // Node type
 #[doc = "UserDefinedValueTypeDefinitionNodeType"]
 #[doc = r""]

@@ -7,7 +7,6 @@ pub use identifier::*;
 mod literal;
 pub use literal::*;
 
-
 #[doc = "YulExpression"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

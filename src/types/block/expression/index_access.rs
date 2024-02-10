@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation, TypeDescriptions};
 
-
 #[doc = "IndexAccess"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -113,8 +112,6 @@ impl From<&IndexAccess> for IndexAccess {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "IndexAccessNodeType"]

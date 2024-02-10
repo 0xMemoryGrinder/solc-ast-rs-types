@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{ElementaryTypeName, SourceLocation, TypeDescriptions};
 
-
 #[doc = "ElementaryTypeNameExpression"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -101,7 +100,6 @@ impl From<&ElementaryTypeNameExpression> for ElementaryTypeNameExpression {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "ElementaryTypeNameExpressionNodeType"]

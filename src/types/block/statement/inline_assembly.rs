@@ -9,7 +9,6 @@ pub use flags_item::*;
 
 use crate::types::{SourceLocation, YulBlock};
 
-
 #[doc = "InlineAssembly"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -132,8 +131,6 @@ impl From<&InlineAssembly> for InlineAssembly {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "InlineAssemblyNodeType"]

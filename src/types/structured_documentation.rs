@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::SourceLocation;
 
-
 #[doc = "StructuredDocumentation"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -51,7 +50,6 @@ impl From<&StructuredDocumentation> for StructuredDocumentation {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "StructuredDocumentationNodeType"]

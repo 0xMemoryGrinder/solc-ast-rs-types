@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::SourceLocation;
 
-
 #[doc = "Continue"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -51,8 +50,6 @@ impl From<&Continue> for Continue {
         value.clone()
     }
 }
-
-
 
 // Node Type
 #[doc = "ContinueNodeType"]

@@ -9,7 +9,6 @@ pub use typed_name::*;
 
 use crate::types::SourceLocation;
 
-
 #[doc = "YulBlock"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -61,8 +60,6 @@ impl From<&YulBlock> for YulBlock {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "YulBlockNodeType"]

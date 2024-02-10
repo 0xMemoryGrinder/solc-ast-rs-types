@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Block, FunctionCall, ParameterList, SourceLocation};
 
-
 #[doc = "TryStatement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -66,8 +65,6 @@ impl From<&TryStatement> for TryStatement {
     }
 }
 
-
-
 // Node type
 #[doc = "TryStatementNodeType"]
 #[doc = r""]
@@ -130,10 +127,6 @@ impl std::convert::TryFrom<String> for TryStatementNodeType {
         value.parse()
     }
 }
-
-
-
-
 
 #[doc = "TryCatchClause"]
 #[doc = r""]

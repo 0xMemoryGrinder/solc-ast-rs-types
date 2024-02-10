@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{ParameterList, SourceLocation, StructuredDocumentation};
 
-
 #[doc = "EventDefinition"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -91,8 +90,6 @@ impl From<&EventDefinition> for EventDefinition {
         value.clone()
     }
 }
-
-
 
 // Node Type
 #[doc = "EventDefinitionNodeType"]

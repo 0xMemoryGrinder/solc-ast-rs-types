@@ -60,7 +60,6 @@ impl From<&EnumValue> for EnumValue {
     }
 }
 
-
 // Node type
 #[doc = "EnumValueNodeType"]
 #[doc = r""]

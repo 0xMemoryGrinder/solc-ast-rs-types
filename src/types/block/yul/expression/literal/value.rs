@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::SourceLocation;
 
-
 #[doc = "YulLiteralValue"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -66,7 +65,6 @@ impl From<&YulLiteralValue> for YulLiteralValue {
         value.clone()
     }
 }
-
 
 #[doc = "YulLiteralValueKind"]
 #[doc = r""]
@@ -140,8 +138,6 @@ impl std::convert::TryFrom<String> for YulLiteralValueKind {
         value.parse()
     }
 }
-
-
 
 // Node type
 #[doc = "YulLiteralValueNodeType"]

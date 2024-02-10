@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{SourceLocation, YulBlock, YulLiteral};
 
-
 #[doc = "YulCase"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -66,7 +65,6 @@ impl From<&YulCase> for YulCase {
     }
 }
 
-
 #[doc = "YulCaseValue"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -104,11 +102,6 @@ impl From<YulLiteral> for YulCaseValue {
         YulCaseValue::YulLiteral(value)
     }
 }
-
-
-
-
-
 
 // Node type
 #[doc = "YulCaseNodeType"]

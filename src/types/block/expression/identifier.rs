@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{SourceLocation, TypeDescriptions};
 
-
 #[doc = "Identifier"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -101,8 +100,6 @@ impl From<&Identifier> for Identifier {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "IdentifierNodeType"]

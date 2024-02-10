@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation, VariableDeclaration};
 
-
 #[doc = "VariableDeclarationStatement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

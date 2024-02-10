@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{SourceLocation, Statement};
 
-
 #[doc = "UncheckedBlock"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -59,8 +58,6 @@ impl From<&UncheckedBlock> for UncheckedBlock {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "UncheckedBlockNodeType"]

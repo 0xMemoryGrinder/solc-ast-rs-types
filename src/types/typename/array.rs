@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation, TypeDescriptions, TypeName};
 
-
 #[doc = "ArrayTypeName"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -70,8 +69,6 @@ impl From<&ArrayTypeName> for ArrayTypeName {
         value.clone()
     }
 }
-
-
 
 // NodeType
 #[doc = "ArrayTypeNameNodeType"]

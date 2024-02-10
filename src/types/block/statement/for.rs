@@ -1,7 +1,8 @@
 use serde::{Deserialize, Serialize};
 
-use crate::types::{Block, Expression, ExpressionStatement, SourceLocation, VariableDeclarationStatement};
-
+use crate::types::{
+    Block, Expression, ExpressionStatement, SourceLocation, VariableDeclarationStatement,
+};
 
 #[doc = "ForStatement"]
 #[doc = r""]
@@ -124,7 +125,6 @@ impl From<&ForStatement> for ForStatement {
     }
 }
 
-
 #[doc = "ForStatementBody"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -167,7 +167,6 @@ impl From<ExpressionStatement> for ForStatementBody {
     }
 }
 
-
 #[doc = "ForStatementInitializationExpression"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -209,8 +208,6 @@ impl From<VariableDeclarationStatement> for ForStatementInitializationExpression
         Self::VariableDeclarationStatement(value)
     }
 }
-
-
 
 // Node type
 #[doc = "ForStatementNodeType"]

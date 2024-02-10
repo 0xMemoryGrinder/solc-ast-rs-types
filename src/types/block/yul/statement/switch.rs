@@ -5,7 +5,6 @@ pub use case::*;
 
 use crate::types::{SourceLocation, YulExpression};
 
-
 #[doc = "YulSwitch"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -62,8 +61,6 @@ impl From<&YulSwitch> for YulSwitch {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "YulSwitchNodeType"]

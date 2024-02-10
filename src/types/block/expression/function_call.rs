@@ -143,7 +143,6 @@ impl From<&FunctionCall> for FunctionCall {
     }
 }
 
-
 #[doc = "FunctionCallKind"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -216,8 +215,6 @@ impl std::convert::TryFrom<String> for FunctionCallKind {
         value.parse()
     }
 }
-
-
 
 // Node type
 #[doc = "FunctionCallNodeType"]

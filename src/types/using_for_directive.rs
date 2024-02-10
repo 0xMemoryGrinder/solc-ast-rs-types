@@ -141,8 +141,6 @@ impl From<&UsingForDirective> for UsingForDirective {
     }
 }
 
-
-
 // Node type
 #[doc = "UsingForDirectiveNodeType"]
 #[doc = r""]

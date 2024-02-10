@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Block, Expression, SourceLocation, Statement};
 
-
 #[doc = "WhileStatement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -69,7 +68,6 @@ impl From<&WhileStatement> for WhileStatement {
     }
 }
 
-
 #[doc = "WhileStatementBody"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -116,9 +114,7 @@ impl From<Box<Statement>> for WhileStatementBody {
     fn from(value: Box<Statement>) -> Self {
         Self::Statement(value.clone())
     }
-}   
-
-
+}
 
 // Node type
 #[doc = "WhileStatementNodeType"]

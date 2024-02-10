@@ -36,11 +36,9 @@ impl SourceLocation {
         let start = self.start();
         let end = self.end();
 
-        start.is_some() && end.is_some() &&
-            index >= start.unwrap() && index <= end.unwrap()
+        start.is_some() && end.is_some() && index >= start.unwrap() && index <= end.unwrap()
     }
 }
-
 
 impl std::ops::Deref for SourceLocation {
     type Target = String;
@@ -48,7 +46,6 @@ impl std::ops::Deref for SourceLocation {
         &self.0
     }
 }
-
 
 impl From<SourceLocation> for String {
     fn from(value: SourceLocation) -> Self {

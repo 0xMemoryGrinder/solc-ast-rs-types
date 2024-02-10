@@ -7,7 +7,9 @@ pub use modifier_invocation::*;
 mod state_mutability;
 pub use state_mutability::*;
 
-use crate::types::{Block, ParameterList, SourceLocation, StructuredDocumentation, Visibility, OverrideSpecifier};
+use crate::types::{
+    Block, OverrideSpecifier, ParameterList, SourceLocation, StructuredDocumentation, Visibility,
+};
 
 #[doc = "FunctionDefinition"]
 #[doc = r""]
@@ -180,7 +182,6 @@ impl From<&FunctionDefinition> for FunctionDefinition {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "FunctionDefinitionNodeType"]

@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::SourceLocation;
 
-
 #[doc = "InlineAssemblyExternalReferencesItem"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -64,7 +63,6 @@ impl From<&InlineAssemblyExternalReferencesItem> for InlineAssemblyExternalRefer
         value.clone()
     }
 }
-
 
 #[doc = "InlineAssemblyExternalReferencesItemSuffix"]
 #[doc = r""]

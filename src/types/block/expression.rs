@@ -29,7 +29,6 @@ pub use tuple::*;
 mod unary_operation;
 pub use unary_operation::*;
 
-
 #[doc = "Expression"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

@@ -5,7 +5,6 @@ pub use enum_value::*;
 
 use crate::types::{SourceLocation, StructuredDocumentation};
 
-
 #[doc = "EnumDefinition"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -89,8 +88,6 @@ impl From<&EnumDefinition> for EnumDefinition {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "EnumDefinitionNodeType"]

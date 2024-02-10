@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation, TypeDescriptions};
 
-
 #[doc = "BinaryOperation"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -143,7 +142,6 @@ impl From<&BinaryOperation> for BinaryOperation {
         value.clone()
     }
 }
-
 
 #[doc = "BinaryOperationOperator"]
 #[doc = r""]
@@ -297,8 +295,6 @@ impl std::convert::TryFrom<String> for BinaryOperationOperator {
         value.parse()
     }
 }
-
-
 
 // Node type
 #[doc = "BinaryOperationNodeType"]

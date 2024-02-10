@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::SourceLocation;
 
-
 #[doc = "PragmaDirective"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -54,8 +53,6 @@ impl From<&PragmaDirective> for PragmaDirective {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "PragmaDirectiveNodeType"]

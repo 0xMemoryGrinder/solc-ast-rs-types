@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation};
 
-
 #[doc = "ExpressionStatement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -56,8 +55,6 @@ impl From<&ExpressionStatement> for ExpressionStatement {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "ExpressionStatementNodeType"]

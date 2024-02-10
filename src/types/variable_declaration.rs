@@ -7,7 +7,9 @@ pub use storage_location::*;
 mod type_descriptions;
 pub use type_descriptions::*;
 
-use crate::types::{Expression, OverrideSpecifier, SourceLocation, StructuredDocumentation, TypeName, Visibility};
+use crate::types::{
+    Expression, OverrideSpecifier, SourceLocation, StructuredDocumentation, TypeName, Visibility,
+};
 
 #[doc = "VariableDeclaration"]
 #[doc = r""]
@@ -186,8 +188,6 @@ impl From<&VariableDeclaration> for VariableDeclaration {
     }
 }
 
-
-
 // Node type
 #[doc = "VariableDeclarationNodeType"]
 #[doc = r""]
@@ -229,7 +229,6 @@ impl std::str::FromStr for VariableDeclarationNodeType {
         }
     }
 }
-
 
 impl std::convert::TryFrom<&str> for VariableDeclarationNodeType {
     type Error = crate::error::ConversionError;

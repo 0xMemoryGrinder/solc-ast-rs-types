@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::SourceLocation;
 
-
 #[doc = "PlaceholderStatement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -51,8 +50,6 @@ impl From<&PlaceholderStatement> for PlaceholderStatement {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "PlaceholderStatementNodeType"]

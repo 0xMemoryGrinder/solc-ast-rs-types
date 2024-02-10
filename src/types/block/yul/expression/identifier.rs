@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::SourceLocation;
 
-
 #[doc = "YulIdentifier"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -51,7 +50,6 @@ impl From<&YulIdentifier> for YulIdentifier {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "YulIdentifierNodeType"]

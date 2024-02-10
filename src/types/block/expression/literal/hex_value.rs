@@ -1,6 +1,5 @@
 use serde::Serialize;
 
-
 #[doc = "LiteralHexValue"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

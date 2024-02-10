@@ -5,7 +5,6 @@ pub use hex_value::*;
 mod value;
 pub use value::*;
 
-
 #[doc = "YulLiteral"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

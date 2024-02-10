@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{SourceLocation, YulExpression};
 
-
 #[doc = "YulExpressionStatement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -51,8 +50,6 @@ impl From<&YulExpressionStatement> for YulExpressionStatement {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "YulExpressionStatementNodeType"]

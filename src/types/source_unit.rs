@@ -3,8 +3,8 @@ use serde::{Deserialize, Serialize};
 mod source_unit_node_type;
 pub use source_unit_node_type::*;
 mod source_unit_nodes_item;
-pub use source_unit_nodes_item::*;
 use crate::types::SourceLocation;
+pub use source_unit_nodes_item::*;
 
 #[doc = "SourceUnit"]
 #[doc = r""]

@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{ParameterList, SourceLocation, StructuredDocumentation};
 
-
 #[doc = "ErrorDefinition"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -82,7 +81,6 @@ impl From<&ErrorDefinition> for ErrorDefinition {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "ErrorDefinitionNodeType"]

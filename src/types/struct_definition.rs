@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{SourceLocation, StructuredDocumentation, VariableDeclaration, Visibility};
 
-
 #[doc = "StructDefinition"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -96,7 +95,6 @@ impl From<&StructDefinition> for StructDefinition {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "StructDefinitionNodeType"]

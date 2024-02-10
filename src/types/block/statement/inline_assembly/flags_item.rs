@@ -1,6 +1,5 @@
 use serde::{Deserialize, Serialize};
 
-
 #[doc = "InlineAssemblyFlagsItem"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

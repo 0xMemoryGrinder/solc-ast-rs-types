@@ -9,7 +9,6 @@ pub use subdenomination::*;
 
 use crate::types::{SourceLocation, TypeDescriptions};
 
-
 #[doc = "Literal"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -155,8 +154,6 @@ impl From<&Literal> for Literal {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "LiteralNodeType"]

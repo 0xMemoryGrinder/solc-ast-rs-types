@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Block, Expression, SourceLocation, Statement};
 
-
 #[doc = "DoWhileStatement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -69,7 +68,6 @@ impl From<&DoWhileStatement> for DoWhileStatement {
     }
 }
 
-
 #[doc = "DoWhileStatementBody"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -111,7 +109,6 @@ impl From<Statement> for DoWhileStatementBody {
         DoWhileStatementBody::Statement(value)
     }
 }
-
 
 // Node type
 #[doc = "DoWhileStatementNodeType"]

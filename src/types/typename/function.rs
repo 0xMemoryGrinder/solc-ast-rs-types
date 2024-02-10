@@ -75,7 +75,6 @@ impl From<&FunctionTypeName> for FunctionTypeName {
     }
 }
 
-
 // Node type
 #[doc = "FunctionTypeNameNodeType"]
 #[doc = r""]

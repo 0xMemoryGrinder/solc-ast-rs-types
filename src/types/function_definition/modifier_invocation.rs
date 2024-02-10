@@ -87,8 +87,6 @@ impl From<&ModifierInvocation> for ModifierInvocation {
     }
 }
 
-
-
 // Node type
 #[doc = "ModifierInvocationNodeType"]
 #[doc = r""]

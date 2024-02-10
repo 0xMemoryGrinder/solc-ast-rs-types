@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::SourceLocation;
 
-
 #[doc = "Break"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -51,7 +50,6 @@ impl From<&Break> for Break {
         value.clone()
     }
 }
-
 
 // Node Type
 #[doc = "BreakNodeType"]

@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{IdentifierPath, SourceLocation, TypeDescriptions};
 
-
 #[doc = "UserDefinedTypeName"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -73,7 +72,6 @@ impl From<&UserDefinedTypeName> for UserDefinedTypeName {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "UserDefinedTypeNameNodeType"]

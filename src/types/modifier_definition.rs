@@ -1,7 +1,8 @@
 use serde::{Deserialize, Serialize};
 
-use crate::types::{Block, OverrideSpecifier, ParameterList, SourceLocation, StructuredDocumentation, Visibility};
-
+use crate::types::{
+    Block, OverrideSpecifier, ParameterList, SourceLocation, StructuredDocumentation, Visibility,
+};
 
 #[doc = "ModifierDefinition"]
 #[doc = r""]
@@ -124,8 +125,6 @@ impl From<&ModifierDefinition> for ModifierDefinition {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "ModifierDefinitionNodeType"]

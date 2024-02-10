@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{SourceLocation, YulExpression, YulIdentifier};
 
-
 #[doc = "YulFunctionCall"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -44,7 +43,7 @@ use crate::types::{SourceLocation, YulExpression, YulIdentifier};
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
 #[serde(deny_unknown_fields)]
-pub struct  YulFunctionCall {
+pub struct YulFunctionCall {
     pub arguments: Vec<YulExpression>,
     #[serde(rename = "functionName")]
     pub function_name: YulIdentifier,
@@ -60,8 +59,6 @@ impl From<&YulFunctionCall> for YulFunctionCall {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "YulFunctionCallNodeType"]

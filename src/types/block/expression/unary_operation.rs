@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation, TypeDescriptions};
 
-
 #[doc = "UnaryOperation"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -124,7 +123,6 @@ impl From<&UnaryOperation> for UnaryOperation {
     }
 }
 
-
 #[doc = "UnaryOperationOperator"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -212,8 +210,6 @@ impl std::convert::TryFrom<String> for UnaryOperationOperator {
         value.parse()
     }
 }
-
-
 
 // Node type
 #[doc = "UnaryOperationNodeType"]

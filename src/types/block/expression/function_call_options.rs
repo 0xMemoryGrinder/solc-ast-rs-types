@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation, TypeDescriptions};
 
-
 #[doc = "FunctionCallOptions"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -115,7 +114,6 @@ impl From<&FunctionCallOptions> for FunctionCallOptions {
         value.clone()
     }
 }
-
 
 // Node type
 #[doc = "FunctionCallOptionsNodeType"]

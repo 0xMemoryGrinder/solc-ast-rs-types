@@ -136,7 +136,6 @@ impl From<Box<Statement>> for IfStatementTrueBody {
     }
 }
 
-
 #[doc = "IfStatementFalseBody"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -184,8 +183,6 @@ impl From<Box<Statement>> for IfStatementFalseBody {
         IfStatementFalseBody::Statement(value)
     }
 }
-
-
 
 // Node Type
 #[doc = "IfStatementNodeType"]

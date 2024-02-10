@@ -11,7 +11,6 @@ pub use mapping::*;
 mod user_defined;
 pub use user_defined::*;
 
-
 #[doc = "TypeName"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

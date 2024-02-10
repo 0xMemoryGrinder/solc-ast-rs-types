@@ -124,7 +124,6 @@ impl From<&Assignment> for Assignment {
     }
 }
 
-
 #[doc = "AssignmentOperator"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -237,8 +236,6 @@ impl std::convert::TryFrom<String> for AssignmentOperator {
         value.parse()
     }
 }
-
-
 
 // Node type
 #[doc = "AssignmentNodeType"]

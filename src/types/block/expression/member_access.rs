@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation, TypeDescriptions};
 
-
 #[doc = "MemberAccess"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -131,8 +130,6 @@ impl From<&MemberAccess> for MemberAccess {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "MemberAccessNodeType"]

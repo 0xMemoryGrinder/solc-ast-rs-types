@@ -33,7 +33,6 @@ pub use r#while::*;
 
 use crate::types::Block;
 
-
 #[doc = "Statement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]

@@ -21,9 +21,7 @@ pub use r#switch::*;
 mod variable_declaration;
 pub use variable_declaration::*;
 
-
 use crate::types::YulBlock;
-
 
 #[doc = "YulStatement"]
 #[doc = r""]

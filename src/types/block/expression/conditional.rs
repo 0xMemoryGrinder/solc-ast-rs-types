@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{Expression, SourceLocation, TypeDescriptions};
 
-
 #[doc = "Conditional"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -112,8 +111,6 @@ impl From<&Conditional> for Conditional {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "ConditionalNodeType"]

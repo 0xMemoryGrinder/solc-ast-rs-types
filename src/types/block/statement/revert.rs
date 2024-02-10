@@ -2,7 +2,6 @@ use serde::{Deserialize, Serialize};
 
 use crate::types::{FunctionCall, SourceLocation};
 
-
 #[doc = "RevertStatement"]
 #[doc = r""]
 #[doc = r" <details><summary>JSON schema</summary>"]
@@ -57,8 +56,6 @@ impl From<&RevertStatement> for RevertStatement {
         value.clone()
     }
 }
-
-
 
 // Node type
 #[doc = "RevertStatementNodeType"]

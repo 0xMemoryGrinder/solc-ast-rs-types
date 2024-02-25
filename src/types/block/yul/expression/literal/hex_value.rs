@@ -50,7 +50,6 @@ use crate::types::SourceLocation;
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct YulLiteralHexValue {
     #[serde(rename = "hexValue")]
     pub hex_value: String,

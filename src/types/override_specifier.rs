@@ -49,7 +49,6 @@ use crate::types::{IdentifierPath, SourceLocation, UserDefinedTypeName};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct OverrideSpecifier {
     pub id: i64,
     #[serde(rename = "nodeType")]

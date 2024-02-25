@@ -49,7 +49,6 @@ use crate::types::{Expression, SourceLocation};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct Return {
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub documentation: Option<String>,

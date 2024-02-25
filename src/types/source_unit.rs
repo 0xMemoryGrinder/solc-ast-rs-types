@@ -102,7 +102,6 @@ pub use source_unit_nodes_item::*;
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct SourceUnit {
     #[serde(rename = "absolutePath")]
     pub absolute_path: String,

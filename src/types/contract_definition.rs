@@ -153,7 +153,6 @@ use crate::types::{SourceLocation, StructuredDocumentation};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct ContractDefinition {
     #[serde(rename = "abstract")]
     pub abstract_: bool,

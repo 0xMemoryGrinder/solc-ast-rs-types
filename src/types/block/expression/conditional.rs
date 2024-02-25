@@ -77,7 +77,6 @@ use crate::types::{Expression, SourceLocation, TypeDescriptions};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct Conditional {
     #[serde(
         rename = "argumentTypes",

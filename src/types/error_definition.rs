@@ -57,7 +57,6 @@ use crate::types::{ParameterList, SourceLocation, StructuredDocumentation};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct ErrorDefinition {
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub documentation: Option<StructuredDocumentation>,

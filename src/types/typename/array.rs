@@ -50,7 +50,6 @@ use crate::types::{Expression, SourceLocation, TypeDescriptions, TypeName};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct ArrayTypeName {
     #[serde(rename = "baseType")]
     pub base_type: TypeName,

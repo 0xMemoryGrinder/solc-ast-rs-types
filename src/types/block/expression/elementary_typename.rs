@@ -69,7 +69,6 @@ use crate::types::{ElementaryTypeName, SourceLocation, TypeDescriptions};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct ElementaryTypeNameExpression {
     #[serde(
         rename = "argumentTypes",

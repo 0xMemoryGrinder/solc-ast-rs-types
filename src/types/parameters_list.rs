@@ -39,7 +39,6 @@ use crate::types::{SourceLocation, VariableDeclaration};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct ParameterList {
     pub id: i64,
     #[serde(rename = "nodeType")]

@@ -48,7 +48,6 @@ use crate::types::{SourceLocation, YulBlock, YulLiteral};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct YulCase {
     pub body: YulBlock,
     #[serde(rename = "nativeSrc", default, skip_serializing_if = "Option::is_none")]

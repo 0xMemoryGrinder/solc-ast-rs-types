@@ -43,7 +43,6 @@ use crate::types::{SourceLocation, StateMutability, TypeDescriptions};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct ElementaryTypeName {
     pub id: i64,
     pub name: String,

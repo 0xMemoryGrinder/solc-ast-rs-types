@@ -45,7 +45,6 @@ use crate::types::{SourceLocation, YulExpression};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct YulSwitch {
     pub cases: Vec<YulCase>,
     pub expression: YulExpression,

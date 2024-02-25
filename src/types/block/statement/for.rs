@@ -88,7 +88,6 @@ use crate::types::{
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct ForStatement {
     pub body: ForStatementBody,
     #[serde(default, skip_serializing_if = "Option::is_none")]

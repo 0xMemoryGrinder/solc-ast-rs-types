@@ -108,7 +108,6 @@ use crate::types::{SourceLocation, YulBlock};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct InlineAssembly {
     #[serde(rename = "AST")]
     pub ast: YulBlock,

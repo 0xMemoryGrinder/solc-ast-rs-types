@@ -63,7 +63,6 @@ use crate::types::{SourceLocation, StructuredDocumentation};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct EnumDefinition {
     #[serde(rename = "canonicalName")]
     pub canonical_name: String,

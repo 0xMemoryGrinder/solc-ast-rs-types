@@ -46,7 +46,6 @@ use crate::types::{Block, FunctionCall, ParameterList, SourceLocation};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct TryStatement {
     pub clauses: Vec<TryCatchClause>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
@@ -176,7 +175,6 @@ impl std::convert::TryFrom<String> for TryStatementNodeType {
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct TryCatchClause {
     pub block: Block,
     #[serde(rename = "errorName")]

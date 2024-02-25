@@ -42,7 +42,6 @@ use crate::types::{SourceLocation, YulExpression, YulIdentifier};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct YulFunctionCall {
     pub arguments: Vec<YulExpression>,
     #[serde(rename = "functionName")]

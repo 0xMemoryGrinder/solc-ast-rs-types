@@ -49,7 +49,6 @@ use crate::types::{IdentifierPath, SourceLocation, TypeDescriptions};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct UserDefinedTypeName {
     #[serde(rename = "contractScope", default)]
     pub contract_scope: (),

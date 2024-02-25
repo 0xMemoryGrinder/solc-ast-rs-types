@@ -68,7 +68,6 @@ use crate::types::{SourceLocation, TypeDescriptions, TypeName};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct NewExpression {
     #[serde(
         rename = "argumentTypes",

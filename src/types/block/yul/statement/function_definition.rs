@@ -53,7 +53,6 @@ use crate::types::{SourceLocation, YulBlock, YulTypedName};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct YulFunctionDefinition {
     pub body: YulBlock,
     pub name: String,

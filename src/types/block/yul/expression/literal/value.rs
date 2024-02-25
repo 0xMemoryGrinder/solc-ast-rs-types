@@ -47,7 +47,6 @@ use crate::types::SourceLocation;
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct YulLiteralValue {
     pub kind: YulLiteralValueKind,
     #[serde(rename = "nativeSrc", default, skip_serializing_if = "Option::is_none")]

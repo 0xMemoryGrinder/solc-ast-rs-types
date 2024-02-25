@@ -68,7 +68,6 @@ use crate::types::{SourceLocation, StructuredDocumentation, VariableDeclaration,
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct StructDefinition {
     #[serde(rename = "canonicalName")]
     pub canonical_name: String,

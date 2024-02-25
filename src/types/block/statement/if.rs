@@ -67,7 +67,6 @@ use crate::types::{Block, Expression, SourceLocation, Statement};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct IfStatement {
     pub condition: Expression,
     #[serde(default, skip_serializing_if = "Option::is_none")]

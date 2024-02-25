@@ -73,7 +73,6 @@ use crate::types::{Expression, SourceLocation, VariableDeclaration};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct VariableDeclarationStatement {
     pub assignments: Vec<Option<i64>>,
     pub declarations: Vec<Option<VariableDeclaration>>,

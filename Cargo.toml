@@ -4,7 +4,7 @@ description = "Rust types for the Solidity AST from the solc compiler"
 license = "GPL-3.0"
 documentation = "https://docs.rs/solc-ast-rs-types"
 repository = "https://github.com/0xMemoryGrinder/solc-ast-rs-types"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 exclude = ["assets/*", "target/*", ".github/*"]
 

@@ -56,7 +56,6 @@ use crate::types::{Expression, IdentifierPath, SourceLocation, UserDefinedTypeNa
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct InheritanceSpecifier {
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub arguments: Option<Vec<Expression>>,

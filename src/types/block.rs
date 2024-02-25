@@ -55,7 +55,6 @@ use crate::types::SourceLocation;
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct Block {
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub documentation: Option<String>,

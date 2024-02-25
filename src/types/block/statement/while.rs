@@ -50,7 +50,6 @@ use crate::types::{Block, Expression, SourceLocation, Statement};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct WhileStatement {
     pub body: WhileStatementBody,
     pub condition: Expression,

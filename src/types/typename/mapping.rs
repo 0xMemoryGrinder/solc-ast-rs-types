@@ -56,7 +56,6 @@ use crate::types::{SourceLocation, TypeDescriptions, TypeName};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct Mapping {
     pub id: i64,
     #[serde(rename = "keyName", default, skip_serializing_if = "Option::is_none")]

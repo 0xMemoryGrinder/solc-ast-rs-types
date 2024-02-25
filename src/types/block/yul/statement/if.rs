@@ -39,7 +39,6 @@ use crate::types::{SourceLocation, YulBlock, YulExpression};
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct YulIf {
     pub body: YulBlock,
     pub condition: YulExpression,

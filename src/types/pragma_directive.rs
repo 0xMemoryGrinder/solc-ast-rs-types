@@ -39,7 +39,6 @@ use crate::types::SourceLocation;
 #[doc = r" ```"]
 #[doc = r" </details>"]
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct PragmaDirective {
     pub id: i64,
     pub literals: Vec<String>,

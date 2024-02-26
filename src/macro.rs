@@ -496,8 +496,10 @@ macro_rules! make_visitor {
                     for param in & $($mut)? function.parameters {
                         v.visit_yul_typed_name(param);
                     }
-                    for param in & $($mut)? function.return_variables {
-                        v.visit_yul_typed_name(param);
+                    if let Some(ret) = & $($mut)? function.return_variables {
+                        for param in ret {
+                            v.visit_yul_typed_name(param);
+                        }
                     }
                 }
 

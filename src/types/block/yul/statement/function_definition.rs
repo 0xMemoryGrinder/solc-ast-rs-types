@@ -61,8 +61,12 @@ pub struct YulFunctionDefinition {
     #[serde(rename = "nodeType")]
     pub node_type: YulFunctionDefinitionNodeType,
     pub parameters: Vec<YulTypedName>,
-    #[serde(rename = "returnVariables")]
-    pub return_variables: Vec<YulTypedName>,
+    #[serde(
+        rename = "returnVariables",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
+    pub return_variables: Option<Vec<YulTypedName>>,
     pub src: SourceLocation,
 }
 

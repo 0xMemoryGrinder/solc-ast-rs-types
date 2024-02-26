@@ -136,9 +136,9 @@ pub struct FunctionDefinition {
     #[serde(
         rename = "baseFunctions",
         default,
-        skip_serializing_if = "Vec::is_empty"
+        skip_serializing_if = "Option::is_none"
     )]
-    pub base_functions: Vec<i64>,
+    pub base_functions: Option<Vec<i64>>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub body: Option<Block>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
